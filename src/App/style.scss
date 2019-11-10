@@ -1,0 +1,31 @@
+@import '@id-sk/frontend/idsk/all';
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.govuk-form-group {
+  margin-bottom: 20px;
+  padding-left: 15px;
+  margin-left: -15px;
+  transition: box-shadow 0.2s ease;
+
+  &--error {
+    border-left: none;
+    box-shadow: -5px 0px #df3034;
+    padding-left: 15px;
+    margin-left: -15px;
+  }
+}
